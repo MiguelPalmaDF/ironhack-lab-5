@@ -51,11 +51,9 @@ GROUP BY Orders.OrderID;
 
 *Ineficiencias Identificadas:*
 - Falta de índice en la columna `City`.
-- Selección de todas las columnas en la `SELECT`.
 
 *Optimización Propuesta:*
 - Crear un índice en la columna `City`.
-- Seleccionar solo las columnas necesarias.
 
 ```sql
 CREATE INDEX idx_customers_city ON Customers(City);
